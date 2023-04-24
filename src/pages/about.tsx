@@ -2,6 +2,7 @@ import React from 'react'
 import { HeadFC, PageProps } from "gatsby"
 import Layout from '../components/layout'
 import { StaticImage } from "gatsby-plugin-image"
+import Seo from '../components/seo'
 
 const AboutPage: React.FC<PageProps> = () => {
   return (
@@ -17,4 +18,4 @@ const AboutPage: React.FC<PageProps> = () => {
 export default AboutPage
 
 
-export const Head: HeadFC = () => <title>About Page</title>
+export const Head: HeadFC = () => <Seo title='About page' />

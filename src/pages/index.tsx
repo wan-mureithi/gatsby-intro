@@ -1,7 +1,8 @@
 import * as React from "react"
-import { HeadFC, Link, PageProps } from "gatsby"
+import { HeadFC, graphql, PageProps } from "gatsby"
 import Layout from "../components/layout"
 import { StaticImage } from "gatsby-plugin-image"
+import Seo from '../components/seo'
 
 
 const linkStyle = {
@@ -9,14 +10,6 @@ const linkStyle = {
   fontWeight: "bold",
   fontSize: 16,
   verticalAlign: "5%",
-}
-
-const docLinkStyle = {
-  ...linkStyle,
-  listStyleType: "none",
-  display: `inline-block`,
-  marginBottom: 24,
-  marginRight: 12,
 }
 
 
@@ -36,4 +29,4 @@ const IndexPage: React.FC<PageProps> = () => {
 
 export default IndexPage
 
-export const Head: HeadFC = () => <title>Home Page</title>
+export const Head: HeadFC = () => <Seo title='Home page' />
