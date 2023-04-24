@@ -14,7 +14,7 @@ const Seo: React.FC<SeoProps> = ({ title }) => {
     }
   }
 `)
-console.log(data.site.siteMetadata.title )
+
   return (
     <title>
         { title + ' | ' + data.site.siteMetadata.title }
